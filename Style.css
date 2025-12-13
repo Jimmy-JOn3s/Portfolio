@@ -81,7 +81,95 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .cardcolor{
-  background-color: #e0e7ff
+  background-color: #f5f5f5;
+  border: 1px solid #d1d5db;
+}
+
+.hero{
+  padding-top: 4rem;
+}
+
+.hero-text p{
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-image-wrapper{
+  background-color: transparent;
+}
+
+.hero-img{
+  max-width: 150px;
+  width: 100%;
+}
+
+@media (min-width: 992px){
+  .hero-text p{
+    margin-left: 0;
+  }
+
+  .hero-image-wrapper{
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 991.98px){
+  .hero{
+    padding-top: 3rem;
+  }
+
+  .hero-text{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .hero-text p{
+    max-width: 100%;
+  }
+
+  .hero-image-wrapper{
+    padding: 1.5rem 0 0;
+  }
+
+  .hero-img{
+    max-width: 140px;
+  }
+}
+
+@media (min-width: 1400px){
+  .hero-text p{
+    max-width: 54rem;
+  }
+}
+
+.section-divider{
+  border: 0;
+  border-top: 2px solid #111111;
+  width: min(90%, 70rem);
+  margin: 4rem auto;
+}
+
+.fade-in-up{
+  opacity: 0;
+  transform: translateY(36px);
+  --animate-delay: 0s;
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--animate-delay, 0s);
+  will-change: opacity, transform;
+}
+
+.fade-in-up.is-visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce){
+  .fade-in-up{
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 .team-card:hover img {
