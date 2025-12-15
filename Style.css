@@ -141,6 +141,10 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   .hero-text p{
     max-width: 54rem;
   }
+
+  .timeline ul{
+    width: min(76rem, 90%);
+  }
 }
 
 .section-divider{
@@ -227,7 +231,7 @@ a:focus {
   grid-auto-columns: max-content;
   column-gap: var(--col-gap);
   list-style: none;
-  width: min(60rem, 90%);
+  width: min(70rem, 95%);
   margin-inline: auto;
 }
 
