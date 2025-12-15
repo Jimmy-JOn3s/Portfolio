@@ -89,6 +89,15 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   padding-top: 4rem;
 }
 
+.hero-heading > div{
+  letter-spacing: 0.06em;
+  word-spacing: 0.15em;
+}
+
+.hero-heading > div + div{
+  margin-top: 0.35rem;
+}
+
 .hero-text p{
   max-width: 48rem;
   margin-left: auto;
