@@ -504,6 +504,16 @@ a:focus {
     grid-row: 4;
   }
 
+  .timeline ul li:nth-child(5) {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .timeline ul li:nth-child(6) {
+    grid-column: 3;
+    grid-row: 6;
+  }
+
   /* Flip date flap for left-column cards (odd numbers) */
   .timeline ul li:nth-child(odd) .date {
     border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
