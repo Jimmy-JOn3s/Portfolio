@@ -85,6 +85,11 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   border: 1px solid #d1d5db;
 }
 
+/* Project card images - add border to define edges */
+.cardcolor .card-img-top {
+  border-bottom: 8px solid #d1d5db;
+}
+
 .hero{
   padding-top: 4rem;
 }
@@ -148,26 +153,84 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 /* Optimize hero heading sizes for small screens */
 @media (max-width: 767.98px){
+  .hero{
+    padding-top: 2rem;
+  }
+
   .hero-heading .display-4{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .hero-heading .display-5{
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .hero-text .fs-5{
+    font-size: 1.05rem !important;
+  }
+
+  .btn-lg{
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 575.98px){
+  .hero{
+    padding-top: 1.5rem;
+  }
+
   .hero-heading .display-4{
-    font-size: 2rem;
+    font-size: 1.75rem;
+    line-height: 1.3;
   }
 
   .hero-heading .display-5{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.3;
   }
 
   .hero-text .fs-5{
-    font-size: 1rem !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5;
+  }
+
+  .btn-lg{
+    padding: 0.45rem 0.85rem;
+    font-size: 0.875rem;
+  }
+
+  .hero-img{
+    max-width: 120px;
+  }
+
+  .hero-text{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 375px){
+  .hero-heading .display-4{
+    font-size: 1.5rem;
+  }
+
+  .hero-heading .display-5{
+    font-size: 1.2rem;
+  }
+
+  .hero-text .fs-5{
+    font-size: 0.875rem !important;
+  }
+
+  .btn-lg{
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .hero-img{
+    max-width: 100px;
   }
 }
 
