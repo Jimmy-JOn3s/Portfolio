@@ -107,6 +107,11 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   max-width: 48rem;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.7;
+}
+
+.hero-summary{
+  max-width: 56rem !important;
 }
 
 .hero-image-wrapper{
@@ -167,6 +172,15 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
   .hero-text .fs-5{
     font-size: 1.05rem !important;
+  }
+
+  .timeline ul li .date{
+    font-size: 0.95rem;
+  }
+
+  .timeline ul li .title,
+  .timeline ul li .descr{
+    padding-inline: 1.25rem;
   }
 
   .btn-lg{
@@ -361,17 +375,19 @@ a:focus {
 /* Date */
 .timeline ul li .date {
   --dateH: 3rem;
-  height: var(--dateH);
+  min-height: var(--dateH);
   margin-inline: calc(var(--inlineP) * -1);
   text-align: center;
   background-color: var(--accent-color);
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: 700;
   display: grid;
   place-content: center;
   position: relative;
   border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
+  padding: 0.75rem 1.25rem;
+  line-height: 1.35;
 }
 
 /* Date flap */
@@ -413,13 +429,15 @@ a:focus {
   overflow: hidden;
   padding-block-start: 1.5rem;
   padding-block-end: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  line-height: 1.55;
 }
 
 .timeline ul li .descr {
   padding-block-end: 1.5rem;
   padding-inline: 2rem;
   font-weight: 300;
+  line-height: 1.7;
 }
 
 /* Restore bullet points for nested lists in descriptions */
@@ -435,7 +453,7 @@ a:focus {
 
 .timeline ul li .descr ul li {
   display: list-item;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.55rem;
   padding-inline: 0;
   margin-inline: 0;
   line-height: 1.6;
@@ -448,6 +466,26 @@ a:focus {
   content: "- ";
   margin-right: 0.5rem;
   font-weight: 500;
+}
+
+.card-body .card-title{
+  line-height: 1.4;
+}
+
+.card-body .card-text{
+  line-height: 1.65;
+}
+
+#featured-projects .card-body{
+  padding: 1.5rem;
+}
+
+#featured-projects .card-text.small{
+  font-size: 0.9rem;
+}
+
+#contact .card-text{
+  overflow-wrap: anywhere;
 }
 
 /* Shadows */
@@ -531,4 +569,3 @@ a:focus {
     right: auto;
   }
 }
-
